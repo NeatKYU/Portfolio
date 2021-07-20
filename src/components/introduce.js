@@ -1,3 +1,4 @@
+import React from 'react';
 import styled from 'styled-components';
 import { BsFillPersonFill, BsPeopleCircle } from 'react-icons/bs';
 import { AiFillPushpin, AiFillPhone, AiTwotoneHome} from 'react-icons/ai';
@@ -58,13 +59,11 @@ export const Introduce = () => {
 		<>
 			<IntroduceZone>
 				<div className={"introduce-title"}>
-					<div>
-						<AiFillPushpin/> Introduce
-					</div>
+					<AiFillPushpin/> Introduce
 				</div>
 				<div className={"introduce-coments"}>
 					<div>안녕하세요</div>
-					<div>항상 발전하고 있는 웹 개발자입니다.</div>
+					<div>항상 발전하고 있는 웹 개발자 입니다.</div>
 				</div>
 				<div className={"introduce-info"}>
 					<div className={"contents"}>
