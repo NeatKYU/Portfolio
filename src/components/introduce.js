@@ -60,7 +60,7 @@ export const Introduce = () => {
 
 	return (
 		<>
-			<IntroduceZone>
+			<IntroduceZone id={"Introduce"}>
 				<div className={"introduce-title"}>
 					<AiFillPushpin/> Introduce
 				</div>

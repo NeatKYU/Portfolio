@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import {Link as ScrollLink} from 'react-scroll';
 // import HeadImage from '../images/codeing.jpeg';
 
 const ImageZone = styled.div`
@@ -49,9 +50,21 @@ export const Header = () => {
 					Kyu Portfolio
 				</div>
 				<div className={"header-nav"}>
-					<span>Introduce</span>
-					<span>Skill</span>
-					<span>Project</span>
+					<span>
+						<ScrollLink to="Introduce" spy={true} smooth={true}>
+							Introduce
+						</ScrollLink>
+					</span>
+					<span>
+						<ScrollLink to="Skill" spy={true} smooth={true}>
+							Skill
+						</ScrollLink>
+					</span>
+					<span>
+						<ScrollLink to="Projects" spy={true} smooth={true}>
+							Projects
+						</ScrollLink>
+					</span>
 				</div>
 			</NavZone>
 		</>

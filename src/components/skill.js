@@ -39,7 +39,7 @@ export const Skill = () => {
 
 	return (
 		<>
-			<SkillZone>
+			<SkillZone id={"Skill"}>
 				<div className={"skill-title"}>
 					<AiFillPushpin/> Skills
 				</div>

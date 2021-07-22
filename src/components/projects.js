@@ -68,19 +68,12 @@ const ProjectZone = styled.div`
 		}
 		.project-detail {
 			/* max-width: 450px; */
-			font-size: 20px;
+			font-size: 15px;
 			text-align: left;
 			margin-left: 3rem;
 			line-height: 1.5;
-			display: inline-flex;
-			.div-title{
-				display: inline-block;
-			}
-			.text-right {
-				float: right;
-			}
 			svg {
-				font-size: 18px;
+				font-size: 13px;
 			}
 		}
 	}
@@ -121,7 +114,7 @@ export const Projects = () => {
 
 	return (
 		<>
-			<ProjectZone>
+			<ProjectZone id={"Projects"}>
 				<div className={"projects-title"}>
 					<AiFillPushpin/> Projects
 				</div>
@@ -156,13 +149,10 @@ export const Projects = () => {
 						<div className={"project-coment"}>{projectComent()}</div>
 						<Line/>
 						<div className={"project-detail"}>
-							<div>
-								<div className={"div-title"}><AiOutlinePushpin/> 도메인</div>
-								<div className={"div-title text-right"}>https://dataservice.ftk.kr</div>
-							</div>
+							<div><AiOutlinePushpin/> 도메인 : https://dataservice.ftk.kr</div>
 							<div><AiOutlinePushpin/> github : https://github.com/NeatKYU/DI-WEB</div>
 							<div><AiOutlinePushpin/> front-end : React, typescript, sass</div>
-							<div><AiOutlinePushpin/> back-end : Java, spring</div>
+							<div><AiOutlinePushpin/> back-end : Java, spring, mysql</div>
 						</div>
 					</div>
 				</div>
