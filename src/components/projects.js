@@ -11,6 +11,9 @@ import dataserviceImage4 from '../images/dataservice4.png';
 import dataserviceImage5 from '../images/dataservice5.png';
 import dataserviceImage6 from '../images/dataservice6.png';
 import dataserviceImage7 from '../images/dataservice7.png';
+import portfolioImage1 from '../images/portfolio1.png';
+import portfolioImage2 from '../images/portfolio2.png';
+import portfolioImage3 from '../images/portfolio3.png';
 import { Line } from './line';
 
 const ProjectZone = styled.div`
@@ -96,9 +99,28 @@ export const Projects = () => {
 				</div>
 				<br/>
 				<div>
-					웹 개발의 초보였던 저는 이 프로젝트를 진행하면서 많은 라이브러리를 적용하는 방법을 배웠고 
+					웹 개발의 초보였던 저는 이 프로젝트를 진행하면서 <span>chart js, datepicker 등</span> 많은 라이브러리를 적용하는 방법을 배웠고 
 					디자이너와의 협업도 경험할 수 있던 즐거운 시간이였습니다
 				</div>
+			</>
+		)
+	}
+
+	const projectComent2 = () => {
+		return (
+			<>
+				<div>
+					포트폴리오 사이트는 저의 취업에 도움이 되고 경력을 기록하며<br/> 기억하기위해 만들었습니다. 
+				</div>
+				<br/>
+				<div>
+					<span>React기반</span>이며 간단히 본인을 소개하는 introduce, 
+					재가 사용하는 기술 스택을 보여주는 skills, 
+					마지막으로 진행했던 프로젝트를 나열한 projects부분으로 나누어져 있습니다.
+					디자인은 아직 많이 부족하여 차차 업데이트 하겠습니다.
+					새로운 프로젝트를 참여하게되면 여기에 차곡차곡 기록할 예정입니다.
+				</div>
+				<br/>
 			</>
 		)
 	}
@@ -146,6 +168,7 @@ export const Projects = () => {
 					</div>
 					<div className={"project-info"}>
 						<div className={"project-name"}>Data Service</div>
+						<div className={"font-sebang-regular"} style={{lineHeight: "2"}}>2021.03 ~ 2021.06</div>
 						<div className={"project-coment"}>{projectComent()}</div>
 						<Line/>
 						<div className={"project-detail"}>
@@ -157,6 +180,33 @@ export const Projects = () => {
 					</div>
 				</div>
 				<Line/>
+				<div className={"slider-zone"}>
+					<div className={"slider-main"}>
+						<Slider {...settings}>
+							<div>
+								<img src={portfolioImage1} alt={""}/>
+							</div>
+							<div>
+								<img src={portfolioImage2} alt={""}/>
+							</div>
+							<div>
+								<img src={portfolioImage3} alt={""}/>
+							</div>
+						</Slider>
+					</div>
+					<div className={"project-info"}>
+						<div className={"project-name"}>portfolio site</div>
+						<div className={"font-sebang-regular"} style={{lineHeight: "2"}}>2021.07</div>
+						<div className={"project-coment"}>{projectComent2()}</div>
+						<Line/>
+						<div className={"project-detail"}>
+							<div><AiOutlinePushpin/> 도메인 : x</div>
+							<div><AiOutlinePushpin/> github : https://github.com/NeatKYU/portfolio</div>
+							<div><AiOutlinePushpin/> front-end : React, sass</div>
+							<div><AiOutlinePushpin/> back-end : x</div>
+						</div>
+					</div>
+				</div>
 			</ProjectZone>
 		</>
 	)

@@ -37,6 +37,9 @@ const NavZone = styled.div`
 			font-size: 25px;
 			cursor: pointer;
 			color: #aaaaaa;
+			&:hover {
+				color: #f2ccad;
+			}
 		}
 	}
 `;
@@ -49,7 +52,7 @@ export const Header = () => {
 				<div className={"header-title"}>
 					Kyu Portfolio
 				</div>
-				<div className={"header-nav"}>
+				<div className={"header-nav font-sebang-regular"}>
 					<span>
 						<ScrollLink to="Introduce" spy={true} smooth={true}>
 							Introduce

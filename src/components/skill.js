@@ -14,6 +14,7 @@ import {ReactComponent as GitIcon} from '../images/git.svg';
 import {ReactComponent as PostgresqlIcon} from '../images/postgresql.svg';
 import {ReactComponent as JavaIcon} from '../images/java.svg';
 import {ReactComponent as SpringIcon} from '../images/spring.svg';
+import {ReactComponent as NodejsIcon} from '../images/nodejs.svg';
 import skillBack from '../images/skillBack.jpg';
 
 const SkillZone = styled.div`
@@ -69,7 +70,7 @@ export const Skill = () => {
 					<div>Back-end</div>
 				</div>
 				<div className={"image-contents"}>
-					<JavaIcon/><SpringIcon/><PostgresqlIcon/>
+					<NodejsIcon/><PostgresqlIcon/>
 				</div>
 				<div>
 					<div className={"skill-subTitle display-flex"}>
