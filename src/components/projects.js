@@ -14,6 +14,9 @@ import dataserviceImage7 from '../images/dataservice7.png';
 import portfolioImage1 from '../images/portfolio1.png';
 import portfolioImage2 from '../images/portfolio2.png';
 import portfolioImage3 from '../images/portfolio3.png';
+import comicStack1 from '../images/comicstack.PNG';
+import comicStack2 from '../images/comicstack2.PNG';
+import comicStack3 from '../images/comicstack3.PNG';
 import { Line } from './line';
 
 const ProjectZone = styled.div`
@@ -124,6 +127,24 @@ export const Projects = () => {
 			</>
 		)
 	}
+
+	const projectComent3 = () => {
+		return (
+			<>
+				<div>
+					코딩을 필요한사람이라면 누구나 쉽게 배울 수 있도록 웹툰과 접목시켰습니다.
+					코딩교육의 문제는 진입장벽이라는 생각을 가지고 웹툰으로 그 진입장벽을 낮추고
+					매주 올라오는 웹툰을 즐겁게 보기만해도 교육이되게 하는게 목표입니다.
+				</div>
+				<br/>
+				<div>
+					<span>React와 golang기반</span>이며 RestfulAPI로 데이터 통신하고
+					간단한 CRUD가 가능합니다.  
+				</div>
+				<br/>
+			</>
+		)
+	}
 	
 	const settings = {
 		dots: true,
@@ -200,10 +221,38 @@ export const Projects = () => {
 						<div className={"project-coment"}>{projectComent2()}</div>
 						<Line/>
 						<div className={"project-detail"}>
-							<div><AiOutlinePushpin/> 도메인 : x</div>
+							<div><AiOutlinePushpin/> 도메인 : https://neatkyu.github.io/Portfolio</div>
 							<div><AiOutlinePushpin/> github : https://github.com/NeatKYU/portfolio</div>
 							<div><AiOutlinePushpin/> front-end : React, sass</div>
 							<div><AiOutlinePushpin/> back-end : x</div>
+						</div>
+					</div>
+				</div>
+				<Line/>
+				<div className={"slider-zone"}>
+					<div className={"slider-main"}>
+						<Slider {...settings}>
+							<div>
+								<img src={comicStack1} alt={""}/>
+							</div>
+							<div>
+								<img src={comicStack2} alt={""}/>
+							</div>
+							<div>
+								<img src={comicStack3} alt={""}/>
+							</div>
+						</Slider>
+					</div>
+					<div className={"project-info"}>
+						<div className={"project-name"}>comicStack</div>
+						<div className={"font-sebang-regular"} style={{lineHeight: "2"}}>2021.07</div>
+						<div className={"project-coment"}>{projectComent3()}</div>
+						<Line/>
+						<div className={"project-detail"}>
+							<div><AiOutlinePushpin/> 도메인 : x</div>
+							<div><AiOutlinePushpin/> github : https://github.com/NeatKYU/comicstack</div>
+							<div><AiOutlinePushpin/> front-end : React, sass</div>
+							<div><AiOutlinePushpin/> back-end : golang</div>
 						</div>
 					</div>
 				</div>
